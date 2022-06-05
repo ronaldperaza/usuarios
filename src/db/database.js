@@ -5,5 +5,4 @@ const db = new Sequelize('usuarios', 'root', '', {
     dialect: 'mysql', 
 });
 
-
 module.exports = db

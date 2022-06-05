@@ -19,10 +19,10 @@ const PORT      = process.env.PORT || 3000;
 
 // //middelware
 app.use(express.json()); // recibe la informacion
-app.use(cors()) // habilita a otras app para enviar las solicitudes
+app.use(cors()); // habilita a otras app para enviar las solicitudes
 
-app.use('/usuarios', usuarios)
+app.use('/usuarios', usuarios);
 
 app.listen(PORT, () => {
     console.log(`servidor corriendo en el puerto ${PORT}`)
-})
+});
